@@ -1,0 +1,9 @@
+import HeroSection from "@/components/app/automotive-iot/payload-iot/hero-section";
+const PayloadIOT = () => {
+  return (
+    <div className="mt-[-64px] relative bg-[#F8F7F5] overflow-hidden">
+      <HeroSection />
+    </div>
+  );
+};
+export default PayloadIOT;
