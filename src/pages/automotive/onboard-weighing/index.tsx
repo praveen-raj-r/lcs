@@ -38,7 +38,6 @@ const OnboardWeighing = () => {
   return (
     <div className="bg-[#F8F7F5] overflow-hidden">
       <HeroSection />
-
       <GridSection />
       <VideoSection />
       <FactsSection />

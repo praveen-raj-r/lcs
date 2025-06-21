@@ -1,7 +1,7 @@
 import DumperWorkFlow from "@/components/app/automotive/onboard-weighing/dumper/dumper-workflow";
 import FeaturesSection from "@/components/app/automotive/onboard-weighing/dumper/features-section";
 import HeroSection from "@/components/app/automotive/onboard-weighing/dumper/hero-section";
-import Metrics from "@/components/app/automotive/onboard-weighing/dumper/metrics";
+import dumperMetrics from "@/assets/onboard-weighing/metrics.png";
 import SafetyAndEfficiency from "@/components/app/automotive/onboard-weighing/dumper/safety-and-efficiency";
 import ScrollSlider from "@/components/app/automotive/onboard-weighing/dumper/scroll-slider";
 import Specifications from "@/components/app/automotive/onboard-weighing/dumper/specifications";
@@ -9,7 +9,12 @@ import VideoSection from "@/components/app/automotive/onboard-weighing/dumper/vi
 import stripeBG from "@/assets/onboard-weighing/dumper/stripe-bg.png";
 import CardsStack from "@/components/app/automotive/onboard-weighing/dumper/cards-stack";
 import PartnersScroll from "@/components/app/partners-scroll";
-
+import DownloadDataSheetSection from "@/components/app/download-data-sheet-section";
+import {
+  VideoPlayer,
+  VideoPlayerContent,
+} from "@/components/ui/kibo-ui/video-player";
+import onboardWeighingVideo from "@/assets/videos/onboard-weighing.mp4";
 const Dumper = () => {
   return (
     <div className="mt-[-64px] relative bg-[#F8F7F5] overflow-hidden">
@@ -38,14 +43,30 @@ const Dumper = () => {
       </div>
       <DumperWorkFlow />
       <CardsStack />
-      <VideoSection />
+      <div className="max-w-7xl mx-auto px-4 w-full relative py-10">
+        <VideoPlayer className="overflow-hidden rounded-4xl border w-full">
+          <VideoPlayerContent
+            slot="media"
+            src={onboardWeighingVideo}
+            preload="auto"
+            muted
+            crossOrigin=""
+            loop
+            autoPlay
+          />
+        </VideoPlayer>
+      </div>
       <SafetyAndEfficiency />
       <ScrollSlider />
       <FeaturesSection />
       <div className="bg-[linear-gradient(194.37deg,rgba(7,146,180,0.1)_48.7%,#FFFFFF_153.66%)]">
-        <Metrics />
+        <div className="w-full max-w-5xl px-4 py-10 mx-auto md:py-40 mt-10 md:mt-30">
+          <img src={dumperMetrics} className="mx-auto" />
+        </div>
         <Specifications />
       </div>
+      <VideoSection />
+      <DownloadDataSheetSection></DownloadDataSheetSection>
       <PartnersScroll />
     </div>
   );
