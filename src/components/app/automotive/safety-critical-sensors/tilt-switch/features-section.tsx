@@ -6,6 +6,13 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+
+import featureImg1 from "@/assets/onboard-weighing/feature-images/feature-img-1.png";
+import featureImg2 from "@/assets/onboard-weighing/feature-images/feature-img-2.png";
+import featureImg3 from "@/assets/onboard-weighing/feature-images/feature-img-3.png";
+import featureImg4 from "@/assets/onboard-weighing/feature-images/feature-img-4.png";
+import featureImg5 from "@/assets/onboard-weighing/feature-images/feature-img-5.png";
+
 const Heading = () => {
   return (
     <div className="flex w-full justify-center">
@@ -29,7 +36,7 @@ const Heading = () => {
 
 const carouselSlides = [
   {
-    image: "/automotive/onboard-weighing/dumper/feature-img-1.png",
+    image: featureImg1,
     heading: "Payload Indicator - x1",
     description: [
       {
@@ -47,7 +54,7 @@ const carouselSlides = [
     ],
   },
   {
-    image: "/automotive/onboard-weighing/dumper/feature-img-2.png",
+    image: featureImg2,
     heading: "Payload Master control unit - x1",
     description: [
       {
@@ -65,7 +72,7 @@ const carouselSlides = [
     ],
   },
   {
-    image: "/automotive/onboard-weighing/dumper/feature-img-3.png",
+    image: featureImg3,
     heading: "Tilt Switch System - x1",
     description: [
       {
@@ -83,7 +90,7 @@ const carouselSlides = [
     ],
   },
   {
-    image: "/automotive/onboard-weighing/dumper/feature-img-4.png",
+    image: featureImg4,
     heading: "Wiring Harness with Protection Hose - x1",
     description: [
       {
@@ -97,7 +104,7 @@ const carouselSlides = [
     ],
   },
   {
-    image: "/automotive/onboard-weighing/dumper/feature-img-5.png",
+    image: featureImg5,
     heading: "Lamp indication - x1",
     description: [
       {

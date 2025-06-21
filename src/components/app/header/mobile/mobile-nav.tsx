@@ -155,12 +155,12 @@ const ListItem = ({
   const contentRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState("0px");
   const navigate = useNavigate();
+
   useEffect(() => {
     if (contentRef.current) {
       setHeight(open ? `${contentRef.current.scrollHeight}px` : "0px");
     }
   }, [open]);
-  console.log(product);
 
   return (
     <li className="rounded-xl">

@@ -15,7 +15,7 @@ const CardsStack = () => {
                   Automotive IoT
                 </span>
               </div>
-              <h3 className="text-[#1D1D1F] text-[38px] font-semibold">
+              <h3 className="text-[#1D1D1F] text-3xl md:text-[38px] font-semibold">
                 Nex-Fleet-One
               </h3>
               <p className="text-[#6A6A6A] font-medium text-lg leading-[28px]">
@@ -24,7 +24,7 @@ const CardsStack = () => {
                 fleet monitoring and management solution.
               </p>
             </div>
-            <div>
+            <div className="mt-4">
               <CustomButton>Learn More</CustomButton>
             </div>
           </div>

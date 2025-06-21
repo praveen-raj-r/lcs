@@ -20,7 +20,7 @@ const Specifications = () => {
         </h3>
         <div
           className={cn(
-            "grid grid-cols-1 grid-rows-12 sm:grid-cols-8 sm:grid-rows-4 md:grid-cols-10 md:grid-rows-3 gap-4"
+            "grid grid-cols-1 grid-rows-11 sm:grid-cols-8 sm:grid-rows-4 md:grid-cols-10 md:grid-rows-3 gap-4"
           )}
         >
           {gridData.map((e, index) => {

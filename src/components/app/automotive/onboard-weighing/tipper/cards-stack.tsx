@@ -15,7 +15,7 @@ const CardsStack = () => {
                   Automotive IoT
                 </span>
               </div>
-              <h3 className="text-[#1D1D1F] text-[38px] font-semibold">
+              <h3 className="text-[#1D1D1F] text-3xl md:text-[38px] font-semibold">
                 Nex-Fleet-One
               </h3>
               <p className="text-[#6A6A6A] font-medium text-lg leading-[28px]">
@@ -24,7 +24,7 @@ const CardsStack = () => {
                 fleet monitoring and management solution.
               </p>
             </div>
-            <div>
+            <div className="mt-4">
               <CustomButton>Learn More</CustomButton>
             </div>
           </div>
@@ -33,7 +33,7 @@ const CardsStack = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center text-[#1d1d1f] text-center relative z-2 py-30">
+        <div className="flex flex-col items-center justify-center text-[#1d1d1f] text-center relative z-2 py-10 md:py-30">
           <h2 className="sm:text-[38px] font-semibold sm:leading-[48px] max-w-[850px] text-3xl z-1 pb-7">
             Weigh on the Go and optimize your mining efficiency like never
             before!

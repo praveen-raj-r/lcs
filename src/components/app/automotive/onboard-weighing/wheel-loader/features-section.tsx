@@ -6,6 +6,12 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import featureImg1 from "@/assets/onboard-weighing/wheel-loader/wheel-loader-features-images/feature-img-1.png";
+import featureImg2 from "@/assets/onboard-weighing/wheel-loader/wheel-loader-features-images/feature-img-2.png";
+import featureImg3 from "@/assets/onboard-weighing/wheel-loader/wheel-loader-features-images/feature-img-3.png";
+import featureImg4 from "@/assets/onboard-weighing/wheel-loader/wheel-loader-features-images/feature-img-4.png";
+import featureImg5 from "@/assets/onboard-weighing/wheel-loader/wheel-loader-features-images/feature-img-5.png";
+
 const Heading = () => {
   return (
     <div className="flex w-full justify-center">
@@ -30,7 +36,7 @@ const Heading = () => {
 
 const carouselSlides = [
   {
-    image: "/automotive/onboard-weighing/dumper/feature-img-1.png",
+    image: featureImg1,
     heading: "Payload Indicator - x1",
     description: [
       {
@@ -48,44 +54,26 @@ const carouselSlides = [
     ],
   },
   {
-    image: "/automotive/onboard-weighing/dumper/feature-img-2.png",
-    heading: "Payload Master control unit - x1",
+    image: featureImg2,
+    heading: "Tilt Switch System -  x1",
     description: [
       {
-        text: "Converting the signal coming from the vibrating sensor into digital output is done by the",
+        text: "Inclinometer is a staple in most heavy vehicle onboard weighing systems. ",
         highlight: false,
       },
       {
-        text: "Mechanical Sensor. Communication between the Operator and the various parts of the weighing",
+        text: "We use our inhouse inclinometer. ",
+        highlight: false,
+      },
+      {
+        text: "These are used to measure the X and Y angles of the vehicle in order to prevent over loading and for safe operations",
         highlight: true,
-      },
-      {
-        text: "system is critical to efficient processing and MSR allows for that",
-        highlight: false,
       },
     ],
   },
   {
-    image: "/automotive/onboard-weighing/dumper/feature-img-3.png",
-    heading: "Tilt Switch System - x1",
-    description: [
-      {
-        text: "Tilt switch is a staple in most heavy vehicle onboard weighing systems. We use our inhouse inclinometer. These are used to measure the",
-        highlight: false,
-      },
-      {
-        text: " X and Y angles of the vehicle in order to prevent over loading",
-        highlight: true,
-      },
-      {
-        text: " and for safe operations",
-        highlight: false,
-      },
-    ],
-  },
-  {
-    image: "/automotive/onboard-weighing/dumper/feature-img-4.png",
-    heading: "Wiring Harness with Protection Hose - x1",
+    image: featureImg3,
+    heading: "Wiring Harness with Protection Hose x1",
     description: [
       {
         text: "Protecting the inner workings of the monitoring system is crucial in the long run. Thus our monitoring system comes with a wiring harness and protection hose to ensure the Wear and Tear over time is kept in check.",
@@ -98,15 +86,33 @@ const carouselSlides = [
     ],
   },
   {
-    image: "/automotive/onboard-weighing/dumper/feature-img-5.png",
-    heading: "Lamp indication - x1",
+    image: featureImg4,
+    heading: "Hi-Precision Load sensor x1",
     description: [
       {
-        text: "Having clear non verbal communication between the operators and the workers is vital in an industrial. Deck lamp is one part of that. We have 3 modes available. Amber light indicates that our system is processing the data. ",
+        text: "A pressure sensor in a wheel loader acts as a Critical Load-measuring tool,",
         highlight: false,
       },
       {
-        text: "Red indicated that the dumper is overloaded. Green light indicates that the dumper is at optimum load",
+        text: " providing Precise Data during Lifting Cylinder operations, ",
+        highlight: true,
+      },
+      {
+        text: "ensuring Efficient and Safe material handling",
+        highlight: false,
+      },
+    ],
+  },
+  {
+    image: featureImg5,
+    heading: "Lamp indication - x1",
+    description: [
+      {
+        text: "In order to communicate Efficiently with the operator and maintain a permanent record we also include a ",
+        highlight: false,
+      },
+      {
+        text: "Thermal printer which prints information Total load, Target Load, Cumulative weight and Time taken etc.",
         highlight: true,
       },
     ],
@@ -131,9 +137,14 @@ const FeaturesSection = () => {
                 opts={{ loop: true, align: "start" }}
               >
                 <CarouselContent>
-                  {carouselSlides.map((card) => (
-                    <Card key={card.description} cardDetails={card} />
-                  ))}
+                  {carouselSlides.map((card, idx) => {
+                    return (
+                      <Card
+                        key={`${card.description[0].text}---${idx}`}
+                        cardDetails={card}
+                      />
+                    );
+                  })}
                 </CarouselContent>
               </Carousel>
             </div>
@@ -171,4 +182,5 @@ const Card = ({ cardDetails }: any) => {
     </CarouselItem>
   );
 };
+
 export default FeaturesSection;

@@ -2,8 +2,6 @@ import CustomButton from "@/components/app/custom-button";
 import lcsLogo from "@/assets/lcs-logo.svg";
 const HeroSection = () => {
   const handleDownload = () => {
-    console.log("test");
-
     const link = document.createElement("a");
     link.href = "/brand-guidelines/LCS+Media+Kit.zip"; // path relative to public folder
     link.download = "LCS+Media+Kit.zip";

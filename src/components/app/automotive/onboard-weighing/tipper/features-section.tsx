@@ -6,6 +6,12 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import featureImg1 from "@/assets/onboard-weighing/feature-images/feature-img-1.png";
+import featureImg2 from "@/assets/onboard-weighing/feature-images/feature-img-2.png";
+import featureImg3 from "@/assets/onboard-weighing/feature-images/feature-img-3.png";
+import featureImg4 from "@/assets/onboard-weighing/feature-images/feature-img-4.png";
+import featureImg5 from "@/assets/onboard-weighing/feature-images/feature-img-5.png";
+
 const Heading = () => {
   return (
     <div className="flex w-full justify-center">
@@ -30,7 +36,7 @@ const Heading = () => {
 
 const carouselSlides = [
   {
-    image: "/automotive/onboard-weighing/dumper/feature-img-1.png",
+    image: featureImg1,
     heading: "Payload Indicator - x1",
     description: [
       {
@@ -48,7 +54,7 @@ const carouselSlides = [
     ],
   },
   {
-    image: "/automotive/onboard-weighing/dumper/feature-img-2.png",
+    image: featureImg2,
     heading: "Payload Master control unit - x1",
     description: [
       {
@@ -66,7 +72,7 @@ const carouselSlides = [
     ],
   },
   {
-    image: "/automotive/onboard-weighing/dumper/feature-img-3.png",
+    image: featureImg3,
     heading: "Tilt Switch System - x1",
     description: [
       {
@@ -84,7 +90,7 @@ const carouselSlides = [
     ],
   },
   {
-    image: "/automotive/onboard-weighing/dumper/feature-img-4.png",
+    image: featureImg4,
     heading: "Wiring Harness with Protection Hose - x1",
     description: [
       {
@@ -98,7 +104,7 @@ const carouselSlides = [
     ],
   },
   {
-    image: "/automotive/onboard-weighing/dumper/feature-img-5.png",
+    image: featureImg5,
     heading: "Lamp indication - x1",
     description: [
       {
@@ -131,8 +137,11 @@ const FeaturesSection = () => {
                 opts={{ loop: true, align: "start" }}
               >
                 <CarouselContent>
-                  {carouselSlides.map((card) => (
-                    <Card key={card.description} cardDetails={card} />
+                  {carouselSlides.map((card, idx) => (
+                    <Card
+                      key={`${card.description}+${idx}`}
+                      cardDetails={card}
+                    />
                   ))}
                 </CarouselContent>
               </Carousel>
@@ -157,14 +166,16 @@ const Card = ({ cardDetails }: any) => {
             {cardDetails.heading}
           </h4>
           <p className="px-4.5 text-[#6A6A6A] font-medium text-lg leading-[28px]">
-            {cardDetails.description.map((curr: any, idx: any) => (
-              <span
-                key={idx}
-                className={cn(curr.highlight && "text-[#D90429]")}
-              >
-                {curr.text}{" "}
-              </span>
-            ))}
+            {cardDetails.description.map((curr: any, idx: any) => {
+              return (
+                <span
+                  key={curr.text + idx}
+                  className={cn(curr.highlight && "text-[#D90429]")}
+                >
+                  {curr.text}{" "}
+                </span>
+              );
+            })}
           </p>
         </div>
       </div>

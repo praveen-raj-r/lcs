@@ -1,6 +1,5 @@
 import CustomButton from "@/components/app/custom-button";
 import icon from "@/assets/red-icon.png";
-
 const HeroSection = () => {
   return (
     <div>

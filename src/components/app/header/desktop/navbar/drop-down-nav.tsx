@@ -6,8 +6,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const DropdownNav = ({ sections }: any) => {
-  console.log(sections);
-
   const [hoveredSection, setHoveredSection] = useState<string | null>(
     sections[0].heading
   );

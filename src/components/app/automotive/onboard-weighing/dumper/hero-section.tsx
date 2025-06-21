@@ -1,5 +1,7 @@
 import CustomButton from "@/components/app/custom-button";
 import icon from "@/assets/red-icon.png";
+
+import dumperImg from "@/assets/onboard-weighing/dumper/dumper.png";
 const HeroSection = () => {
   return (
     <div>
@@ -35,7 +37,7 @@ const HeroSection = () => {
       <div className="relative w-full flex justify-center h-full z-3 px-4">
         <img
           className="absolute right-10 md:-top-30 min-[1024px]:!-top-100 xl:-top-120 2xl:h-auto h-60 sm:h-75 min-[1000px]:h-90 lg:h-100"
-          src="/automotive/onboard-weighing/dumper/dumper.png"
+          src={dumperImg}
         />
       </div>
     </div>
