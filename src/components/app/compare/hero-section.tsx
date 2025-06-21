@@ -1,5 +1,5 @@
-@/assets/red-icon.pngimport comparePageBG from "@/assets/compare-hero-bg.png";
-import icon from "@/assets/icon.png";
+import comparePageBG from "@/assets/compare-hero-bg.png";
+import icon from "@/assets/red-icon.png";
 import CustomButton from "@/components/app/custom-button";
 import compareWtWi from "@/assets/compare-wt-wi.png";
 
