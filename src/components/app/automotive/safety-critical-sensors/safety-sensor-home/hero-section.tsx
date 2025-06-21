@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div className="relative">
       <div className="max-w-5xl w-full px-4 mx-auto md:-mb-30">
-        <div className="text-lg items-center font-semibold leading-[28px] text-[##0792B4] pt-10 md:pt-20 flex justify-center gap-1">
+        <div className="text-lg items-center font-semibold leading-[28px] text-[#0792B4] pt-10 md:pt-20 flex justify-center gap-1">
           <img className="size-6" src={icon} />
           <span>Automotive</span>
         </div>
