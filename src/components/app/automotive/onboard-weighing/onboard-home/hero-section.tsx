@@ -28,8 +28,8 @@ const HeroSection = () => {
           </CustomButton>
         </div>
       </div>
-      <img src={heroBg} className="w-full" />
-      <div className="max-w-5xl mx-auto px-4 pb-20">
+      <img src={heroBg} className="w-full mt-14" />
+      <div className="max-w-5xl mx-auto px-4 pb-20 -mt-20">
         <img src={payloadVehicles} className="w-full" />
       </div>
     </div>
