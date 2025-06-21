@@ -1,14 +1,14 @@
 import CustomButton from "@/components/app/custom-button";
 import icon from "@/assets/icon.png";
+import gridLines from "@/assets/onboard-weighing/grid-lines.png";
+import tipperImg from "@/assets/onboard-weighing/tipper/tipper.png";
+
 const HeroSection = () => {
   return (
     <div>
       <div className="pt-[64px] flex justify-center relative">
         <div className="absolute right-10 -bottom-100 md:bottom-0 md:rotate-0 rotate-45">
-          <img
-            src="/automotive/onboard-weighing/dumper/grid-lines.png"
-            alt=""
-          />
+          <img src={gridLines} />
         </div>
         <div className="mt-10 max-w-5xl w-full mx-4 relative">
           <div className="lg:w-120 xl:w-150 space-y-[40px]">
@@ -35,8 +35,8 @@ const HeroSection = () => {
       </div>
       <div className="relative w-full flex justify-center h-full z-3 px-4">
         <img
-          className="absolute right-10 md:-top-30 min-[1024px]:!-top-100 xl:-top-120 2xl:h-auto h-60 sm:h-75 min-[1000px]:h-90 lg:h-100"
-          src="/automotive/onboard-weighing/tipper/tipper.png"
+          className="absolute right-10 md:-top-10 min-[1024px]:!-top-100 xl:-top-120 2xl:h-auto h-60 sm:h-75 min-[1000px]:h-90 lg:h-100"
+          src={tipperImg}
         />
       </div>
     </div>

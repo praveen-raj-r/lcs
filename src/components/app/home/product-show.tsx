@@ -14,10 +14,7 @@ const ProductShow = () => {
         }}
         className="mt-8 bg-gradient-to-br from-red-300 to-red-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        The content for the
-        <br /> future product to <br />
-        be displayed in <br />
-        this section
+        High-Precision Controls <br /> for Peak Performance{" "}
       </motion.h1>
     </LampContainer>
   );

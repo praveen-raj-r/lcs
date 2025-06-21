@@ -1,7 +1,23 @@
+import onboardWeighingVideo from "@/assets/videos/onboard-weighing.mp4";
+import {
+  VideoPlayer,
+  VideoPlayerContent,
+} from "@/components/ui/kibo-ui/video-player";
+
 const VideoSection = () => {
   return (
-    <div className="h-100 bg-black flex justify-center items-center">
-      <h1 className="text-center text-white text-7xl font-bold">Video</h1>
+    <div className="max-w-7xl mx-auto px-4 w-full relative py-10">
+      <VideoPlayer className="overflow-hidden rounded-4xl border w-full">
+        <VideoPlayerContent
+          slot="media"
+          src={onboardWeighingVideo}
+          preload="auto"
+          muted
+          crossOrigin=""
+          loop
+          autoPlay
+        />
+      </VideoPlayer>
     </div>
   );
 };

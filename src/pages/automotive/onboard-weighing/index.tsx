@@ -1,5 +1,4 @@
 import HeroSection from "@/components/app/automotive/onboard-weighing/onboard-home/hero-section";
-import payloadVehicles from "@/assets/onboard-weighing/home/payload-vehicles.png";
 import VideoSection from "@/components/app/automotive/onboard-weighing/onboard-home/video-section";
 import GridSection from "@/components/app/automotive/onboard-weighing/onboard-home/grid-section";
 import FactsSection from "@/components/app/automotive/onboard-weighing/onboard-home/facts-section";
@@ -9,6 +8,7 @@ import wheelLoaderSpec from "@/assets/onboard-weighing/home/wheel-loader-spec.pn
 import AllVehiclesSection from "@/components/app/automotive/onboard-weighing/onboard-home/all-vehicles-section";
 import DownloadDataSheetSection from "@/components/app/download-data-sheet-section";
 import PartnersScroll from "@/components/app/partners-scroll";
+import CustomButton from "@/components/app/custom-button";
 
 const allSections = [
   {
@@ -38,14 +38,22 @@ const OnboardWeighing = () => {
   return (
     <div className="bg-[#F8F7F5] overflow-hidden">
       <HeroSection />
-      <img src={payloadVehicles} className="w-full" />
+
       <GridSection />
       <VideoSection />
       <FactsSection />
+
       {allSections.map((section) => (
         <AllVehiclesSection key={section.description} section={section} />
       ))}
-      <DownloadDataSheetSection />
+
+      <DownloadDataSheetSection
+        heading="Download Brochure & GA Diagram"
+        description="Access the latest Data Sheet and GA (General Arrangement) Diagram to explore detailed technical specifications, dimensions, and key features of the system. Ensure informed decision-making with all the information at your fingertips."
+      >
+        <CustomButton>Data Sheet</CustomButton>
+        <CustomButton>GA Diagram</CustomButton>
+      </DownloadDataSheetSection>
       <PartnersScroll />
     </div>
   );

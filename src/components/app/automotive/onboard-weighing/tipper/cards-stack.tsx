@@ -39,10 +39,11 @@ const CardsStack = () => {
             before!
           </h2>
           <h6 className="leading-[28px] max-w-[663px] text-lg z-1">
-            Introducing Payload DT, the ultimate solution for monitoring your
-            Dumper's payload, trips and ensure DGMS compliance. Real time
-            tracking, instant data access, comprehensive report for efficient
-            mining.
+            Introducing Payload Tipper — the ultimate solution for monitoring
+            your tipper’s payload, trips, and ensuring DGMS compliance.
+            Experience real-time tracking, instant data access, and
+            comprehensive reporting to boost efficiency and productivity in
+            mining operations.
           </h6>
         </div>
       </div>
