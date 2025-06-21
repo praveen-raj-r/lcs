@@ -60,7 +60,7 @@ import Gprs from "@/pages/automotive/iot-sensors/4g-gprs";
 import Pelicon from "@/pages/automotive/iot-sensors/pelicon";
 import Dumper from "@/pages/automotive/onboard-weighing/dumper";
 import Tipper from "@/pages/automotive/onboard-weighing/tipper";
-import WheelLoder from "@/pages/automotive/onboard-weighing/wheel-loader";
+import WheelLoader from "@/pages/automotive/onboard-weighing/wheel-loader";
 import InclinoMeter from "@/pages/automotive/safety-critical-sensors/inclinometer";
 import TiltSwitch from "@/pages/automotive/safety-critical-sensors/tilt-switch";
 import WeighBridgeHome from "@/pages/indicators/weigh-bridge-terminal/weigh-bridge-home";
@@ -115,7 +115,7 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/automotive/onboard-weighing/wheel-loader",
-        element: <WheelLoder />,
+        element: <WheelLoader />,
       },
 
       // 2 -- Safety Critical Sensors
