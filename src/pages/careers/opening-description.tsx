@@ -14,8 +14,6 @@ const InvalidJob = () => {
 const OpeningDescription = () => {
   const { careerId } = useParams();
 
-  console.log(careerId);
-  console.log(openings);
   const job = openings.find((o) => o.link === careerId);
   const isJobValid = Boolean(job);
 
