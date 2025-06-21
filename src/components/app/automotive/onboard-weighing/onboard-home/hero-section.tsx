@@ -1,6 +1,6 @@
 import heroBg from "@/assets/onboard-weighing/home/hero-bg.png";
 import payloadVehicles from "@/assets/onboard-weighing/home/payload-vehicles.png";
-import icon from "@/assets/icon.png";
+import icon from "@/assets/red-icon.png";
 import CustomButton from "@/components/app/custom-button";
 
 const HeroSection = () => {

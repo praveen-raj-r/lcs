@@ -1,4 +1,4 @@
-import CustomButton from "@/components/app/custom-button";
+@/assets/red-icon.pngimport CustomButton from "@/components/app/custom-button";
 import icon from "@/assets/icon.png";
 import heroBg from "@/assets/safety-critical-sensors/home/hero-bg.png";
 import sensorsImages from "@/assets/safety-critical-sensors/home/safety-critical-sensors.png";

@@ -6,7 +6,7 @@ import SensorsOverview from "@/components/app/automotive/safety-critical-sensors
 
 const SensorHome = () => {
   return (
-    <div className="mt-[-64px] relative bg-[#F8F7F5] overflow-hidden">
+    <div className="relative bg-[#F8F7F5] overflow-hidden">
       <HeroSection /> 
       <GridSection />
       <div className="h-100 bg-black flex justify-center items-center">

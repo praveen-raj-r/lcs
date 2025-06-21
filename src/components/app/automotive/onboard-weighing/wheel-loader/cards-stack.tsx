@@ -1,6 +1,6 @@
-import dumperDashboard from "@/assets/onboard-weighing/dumper/dumper-dashboard.png";
+@/assets/red-icon.pngimport dumperDashboard from "@/assets/onboard-weighing/dumper/dumper-dashboard.png";
 import CustomButton from "@/components/app/custom-button";
-import icon from "@/assets/icon.png";
+import icon from "@/assets/red-icon.png";
 
 const CardsStack = () => {
   return (

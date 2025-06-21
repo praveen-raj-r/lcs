@@ -1,4 +1,4 @@
-import CustomButton from "@/components/app/custom-button";
+@/assets/red-icon.pngimport CustomButton from "@/components/app/custom-button";
 import icon from "@/assets/icon.png";
 const HeroSection = () => {
   return (
