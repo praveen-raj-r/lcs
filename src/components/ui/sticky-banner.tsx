@@ -16,7 +16,6 @@ export const StickyBanner = ({
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log(latest);
     if (hideOnScroll && latest > 40) {
       setOpen(false);
     } else {
@@ -28,7 +27,7 @@ export const StickyBanner = ({
     <motion.div
       className={cn(
         "sticky inset-x-0 top-0 z-40 flex min-h-14 w-full items-center justify-center bg-transparent px-4 py-1",
-        className,
+        className
       )}
       initial={{
         y: -100,
