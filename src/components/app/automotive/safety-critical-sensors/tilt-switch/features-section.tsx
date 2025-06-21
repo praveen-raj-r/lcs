@@ -7,11 +7,10 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-import featureImg1 from "@/assets/onboard-weighing/feature-images/feature-img-1.png";
-import featureImg2 from "@/assets/onboard-weighing/feature-images/feature-img-2.png";
-import featureImg3 from "@/assets/onboard-weighing/feature-images/feature-img-3.png";
-import featureImg4 from "@/assets/onboard-weighing/feature-images/feature-img-4.png";
-import featureImg5 from "@/assets/onboard-weighing/feature-images/feature-img-5.png";
+import featureImg1 from "@/assets/safety-critical-sensors/tiltswitch/feature-images/feature-img-1.png";
+import featureImg2 from "@/assets/safety-critical-sensors/tiltswitch/feature-images/feature-img-2.png";
+import featureImg3 from "@/assets/safety-critical-sensors/tiltswitch/feature-images/feature-img-3.png";
+import featureImg4 from "@/assets/safety-critical-sensors/tiltswitch/feature-images/feature-img-4.png";
 
 const Heading = () => {
   return (
@@ -37,25 +36,17 @@ const Heading = () => {
 const carouselSlides = [
   {
     image: featureImg1,
-    heading: "Payload Indicator - x1",
+    heading: "Tilt Switch Sensor - x1",
     description: [
       {
-        text: "In order to identify the current load in the tipper body we have an Payload Indicator.",
-        highlight: false,
-      },
-      {
-        text: " Fixed inside the driver's cabin, it allows for careful Load Monitoring",
-        highlight: true,
-      },
-      {
-        text: " and Efficient loading and unloading",
+        text: "Take control of safety and precision with our Tilt Switch Sensor. Safeguard equipment, monitor angles, and ensure Reliable Operation in critical applications",
         highlight: false,
       },
     ],
   },
   {
     image: featureImg2,
-    heading: "Payload Master control unit - x1",
+    heading: "Solenoid Valve- x1",
     description: [
       {
         text: "Converting the signal coming from the vibrating sensor into digital output is done by the",
@@ -73,18 +64,10 @@ const carouselSlides = [
   },
   {
     image: featureImg3,
-    heading: "Tilt Switch System - x1",
+    heading: "Buzzer - x1",
     description: [
       {
-        text: "Tilt switch is a staple in most heavy vehicle onboard weighing systems. We use our inhouse inclinometer. These are used to measure the",
-        highlight: false,
-      },
-      {
-        text: " X and Y angles of the vehicle in order to prevent over loading",
-        highlight: true,
-      },
-      {
-        text: " and for safe operations",
+        text: "Buzzers are the other part of non verbal communication. The buzzer will go off when the machine hits the threshold inclination to signal the entire crew. This allows for efficient load transportation and safe environment for the workers and the operator/driver",
         highlight: false,
       },
     ],
@@ -94,26 +77,8 @@ const carouselSlides = [
     heading: "Wiring Harness with Protection Hose - x1",
     description: [
       {
-        text: "Protecting the inner workings of the monitoring system is crucial in the long run. Thus our monitoring system comes with a wiring harness and protection hose to ensure the Wear and Tear over time is kept in check.",
+        text: "Protecting the inner workings of the monitoring system is crucial in the long run. Thus our monitoring system comes with a wiring harness and protection hose to ensure the wear and tear over time is kept in check. It also protects our system from getting damaged from harsh environments",
         highlight: false,
-      },
-      {
-        text: " It also protects our system from getting damaged from harsh environments",
-        highlight: true,
-      },
-    ],
-  },
-  {
-    image: featureImg5,
-    heading: "Lamp indication - x1",
-    description: [
-      {
-        text: "Having clear non verbal communication between the operators and the workers is vital in an industrial. Deck lamp is one part of that. We have 3 modes available. Amber light indicates that our system is processing the data. ",
-        highlight: false,
-      },
-      {
-        text: "Red indicated that the dumper is overloaded. Green light indicates that the dumper is at optimum load",
-        highlight: true,
       },
     ],
   },
@@ -152,7 +117,7 @@ const FeaturesSection = () => {
 
 const Card = ({ cardDetails }: any) => {
   return (
-    <CarouselItem className="basis-1/4">
+    <CarouselItem className="basis-2/5">
       <div className="mx-4 max-w-[300px] min-w-[240px] sm:max-w-[487px] sm:min-w-[487px] flex flex-col gap-7.5">
         <div className="flex justify-center items-center p-4 bg-white shadow-[0px_25px_28.3px_-16px_#00000033]">
           <img src={cardDetails.image} className="" />
@@ -177,4 +142,5 @@ const Card = ({ cardDetails }: any) => {
     </CarouselItem>
   );
 };
+
 export default FeaturesSection;

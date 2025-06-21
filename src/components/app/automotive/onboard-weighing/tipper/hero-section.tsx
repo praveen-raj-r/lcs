@@ -14,7 +14,7 @@ const HeroSection = () => {
           <div className="lg:w-120 xl:w-150 space-y-[40px]">
             <div className="flex items-center gap-2.75">
               <div className="flex justify-center items-center">
-                <img className="size-9" src={icon} alt="" />
+                <img className="size-9" src={icon} />
               </div>
               <span className="font-medium text-[36px] leading-[36px] text-[#D90429]">
                 Tipper

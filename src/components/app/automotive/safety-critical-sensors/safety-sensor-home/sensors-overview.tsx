@@ -6,7 +6,7 @@ const SensorsOverview = () => {
   return (
     <div className="bg-[#E6F4F7] py-20">
       <div className="max-w-5xl w-full mx-auto px-4">
-        <div className="flex w-full justify-between">
+        <div className="flex flex-wrap w-full justify-center">
           {[
             {
               img: tiltSensor,

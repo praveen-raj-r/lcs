@@ -52,4 +52,4 @@ export default tseslint.config({
   },
 })
 ```
-0126ced557072930c4a70cd3d1a6532ff1946a45
+fdec61b686ca150822014504275cdf3c41a7adbf

@@ -1,22 +1,20 @@
 import CustomButton from "@/components/app/custom-button";
 import icon from "@/assets/red-icon.png";
-
+import gridLines from "@/assets/onboard-weighing/grid-lines.png";
 import dumperImg from "@/assets/onboard-weighing/dumper/dumper.png";
+
 const HeroSection = () => {
   return (
     <div>
       <div className="pt-[64px] flex justify-center relative">
         <div className="absolute right-10 -bottom-100 md:bottom-0 md:rotate-0 rotate-45">
-          <img
-            src="/automotive/onboard-weighing/dumper/grid-lines.png"
-            alt=""
-          />
+       <img src={gridLines} />
         </div>
         <div className="mt-10 max-w-5xl w-full mx-4 relative">
           <div className="lg:w-120 xl:w-150 space-y-[40px]">
             <div className="flex items-center gap-2.75">
               <div className="flex justify-center items-center">
-                <img className="size-9" src={icon} alt="" />
+                <img className="size-9" src={icon}/>
               </div>
               <span className="font-medium text-[36px] leading-[36px] text-[#D90429]">
                 Dumper

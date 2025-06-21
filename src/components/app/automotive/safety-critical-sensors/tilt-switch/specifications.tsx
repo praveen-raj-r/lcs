@@ -10,7 +10,7 @@ const Specifications = () => {
   return (
     <div
       style={{
-        clipPath: "polygon(0 0px, 50% 100px, 100% 0px, 100% 100%, 0% 100%)",
+        clipPath: "polygon(0 0px, 50% 80px, 100% 0px, 100% 100%, 0% 100%)",
       }}
       className="bg-[#1D1D1F] w-full flex justify-center"
     >
