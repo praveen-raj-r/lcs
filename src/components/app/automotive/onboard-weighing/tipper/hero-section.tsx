@@ -1,4 +1,4 @@
-@/assets/red-icon.pngimport CustomButton from "@/components/app/custom-button";
+import CustomButton from "@/components/app/custom-button";
 import icon from "@/assets/red-icon.png";
 import gridLines from "@/assets/onboard-weighing/grid-lines.png";
 import tipperImg from "@/assets/onboard-weighing/tipper/tipper.png";
