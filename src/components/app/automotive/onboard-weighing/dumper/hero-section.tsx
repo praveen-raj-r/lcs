@@ -1,5 +1,5 @@
 import CustomButton from "@/components/app/custom-button";
-import icon from "@/assets/red-icon.png";
+import IconText from "@/components/app/icon-text";
 import gridLines from "@/assets/onboard-weighing/grid-lines.png";
 import dumperImg from "@/assets/onboard-weighing/dumper/dumper.png";
 
@@ -12,21 +12,16 @@ const HeroSection = () => {
         </div>
         <div className="mt-10 max-w-5xl w-full mx-4 relative">
           <div className="lg:w-120 xl:w-150 space-y-[40px]">
-            <div className="flex items-center gap-2.75">
-              <div className="flex justify-center items-center">
-                <img className="size-9" src={icon}/>
-              </div>
-              <span className="font-medium text-[36px] leading-[36px] text-[#D90429]">
-                Dumper
-              </span>
-            </div>
+            <IconText color="red" text="Dumper" />
             <h3 className="text-3xl sm:text-5xl xl:text-[56px] xl:leading-[68px] font-semibold text-[#1D1D1F]">
-              Improved weighing and Enhanced Efficiency for Dumper Trucks
+              Optimize Dumper Truck Operations with Precision Payload Management
             </h3>
             <h6 className="text-[#6A6A6A] font-medium text-lg leading-[28px]">
-              Manage payload distribution and Improve Productivity with our
-              Advanced Dumper Onboard Weighing system, designed for Reliability
-              and Accuracy
+             Maximize productivity and ensure safety with our advanced onboard
+              weighing solutions. Designed for rugged performance, our system
+              delivers real-time load data, reduces overloading risks, and
+              streamlines material handling — empowering smarter, faster, and
+              more efficient dump truck operations.
             </h6>
             <CustomButton>Request a quote</CustomButton>
           </div>

@@ -72,7 +72,7 @@ const carouselSlides = [
   },
   {
     image: featureImg3,
-    heading: "Tilt Switch System - x1",
+    heading: "Inclinometer",
     description: [
       {
         text: "Tilt switch is a staple in most heavy vehicle onboard weighing systems. We use our inhouse inclinometer. These are used to measure the",

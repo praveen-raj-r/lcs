@@ -19,7 +19,7 @@ const Heading = () => {
         <div className="flex flex-col gap-4">
           <div className="space-y-2.5 text-[#1D1D1F]">
             <h3 className="sm:text-[38px] font-semibold sm:leading-[48px] text-3xl z-1 pb-7">
-              Product Spectifications
+              Product Specifications
             </h3>
             <p className="max-w-[563px] font-normal leading-[28px] text-lg z-1">
               Manage Payload Distribution & Boost Productivity Experience
@@ -73,7 +73,7 @@ const carouselSlides = [
   },
   {
     image: featureImg3,
-    heading: "Tilt Switch System - x1",
+    heading: "Inclinometer",
     description: [
       {
         text: "Tilt switch is a staple in most heavy vehicle onboard weighing systems. We use our inhouse inclinometer. These are used to measure the",

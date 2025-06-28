@@ -22,9 +22,12 @@ const Heading = () => {
               Product Specifications
             </h3>
             <p className="max-w-[563px] font-normal leading-[28px] text-lg z-1">
-              Manage payload distribution and Improve Productivity with our
-              Advanced Dumper Onboard Weighing system, designed for Reliability
-              and Accuracy
+              Ensure safe tipping and prevent vehicle instability with our
+              Advanced Tilt Switch System, purpose-built for automotive
+              environments such as tippers, dumpers, and haul trucks. Designed
+              for real-time gradient detection and rugged performance, it
+              provides reliable tilt monitoring even in the most demanding
+              off-road and on-road conditions.
             </p>
           </div>
         </div>
@@ -49,15 +52,15 @@ const carouselSlides = [
     heading: "Solenoid Valve- x1",
     description: [
       {
-        text: "Converting the signal coming from the vibrating sensor into digital output is done by the",
+        text: "Elevate the responsiveness of your Tilt Switch System with our Solenoid Valve.",
         highlight: false,
       },
       {
-        text: "Mechanical Sensor. Communication between the Operator and the various parts of the weighing",
+        text: "Ensure Swift and Precise control over the tilt-based functions",
         highlight: true,
       },
       {
-        text: "system is critical to efficient processing and MSR allows for that",
+        text: ", enhancing Safety and Reliability",
         highlight: false,
       },
     ],

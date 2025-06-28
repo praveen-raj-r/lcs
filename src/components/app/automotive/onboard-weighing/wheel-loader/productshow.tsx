@@ -4,7 +4,7 @@ import deviceDisplay from "@/assets/onboard-weighing/wheel-loader/device-display
 const WheelLoaderProductShow: React.FC = () => {
   return (
     <div className="bg-black text-white py-20 px-6 md:px-16">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
         <div className="flex-1 text-[#BFBFBF] md:text-lg space-y-6">
           <h2 className="text-3xl md:text-[38px] md:leading-[48px] font-medium text-[#F8F7F5]">
             Safety and Efficiency On The Fly – For Wheel Loaders

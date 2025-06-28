@@ -59,9 +59,9 @@ function GridDataText({ gridContent, index }: any) {
       animate={
         isInView
           ? {
-              opacity: 1,
-              y: 0,
-            }
+            opacity: 1,
+            y: 0,
+          }
           : { opacity: 0, y: 100 }
       }
       transition={{
@@ -72,10 +72,10 @@ function GridDataText({ gridContent, index }: any) {
         duration: 0.5,
       }}
       ref={gridDataTextRef}
-      className={`flex flex-col items-center max-w-[150px]  my-2 mx-auto sm:mx-0 text-white text-center gap-2 p-2`}
+      className={`flex flex-col items-center max-w-[250px] sm:max-w-[150px] my-2 mx-auto sm:mx-0 text-white text-center gap-2 p-2`}
     >
       <AnimatedLogo hover={hover} paths={gridContent.paths} index={index} />
-      <p className="text-sm text-[#6A6A6A] font-semibold">
+      <p className="text-lg text-[#B4B4B4] font-medium">
         {gridContent.content}
       </p>
     </motion.div>
@@ -94,7 +94,7 @@ function AnimatedLogo({ hover, paths, index }: any) {
           width="25"
           height="25"
           xmlSpace="preserve"
-          className="w-[25px] h-[25px] cursor-pointer transition-transform transform"
+          className="w-[45px] h-[45px] cursor-pointer transition-transform transform"
           viewBox="0 0 25 24"
         >
           <g>

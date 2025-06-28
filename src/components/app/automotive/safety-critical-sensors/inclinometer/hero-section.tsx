@@ -1,41 +1,57 @@
+/* eslint-disable no-irregular-whitespace */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import bgImg from "@/assets/safety-critical-sensors/inclinometer/hero-section-bg.png";
+import cubmini from "@/assets/safety-critical-sensors/inclinometer/cub-mini.png";
 import CustomButton from "@/components/app/custom-button";
-import icon from "@/assets/red-icon.png";
-const HeroSection = () => {
+import IconText from "@/components/app/icon-text";
+
+const Container = ({ children }: any) => {
   return (
     <div>
-      <div className="pt-[64px] flex justify-center relative">
-        <div className="absolute right-10 -bottom-100 md:bottom-0 md:rotate-0 rotate-45">
-          <img src="/onboard-weighing/dumper/grid-lines.png" alt="" />
-        </div>
-        <div className="mt-10 max-w-5xl w-full mx-4 relative">
-          <div className="lg:w-120 xl:w-150 space-y-[40px]">
-            <div className="flex items-center gap-2.75">
-              <div className="flex justify-center items-center">
-                <img className="size-9" src={icon} alt="" />
-              </div>
-              <span className="font-medium text-[36px] leading-[36px] text-[#D90429]">
-                InclinoMeter
-              </span>
+      <div
+        className="md:block hidden bg-[#F8F7F5] bg-no-repeat bg-right"
+        style={{ backgroundImage: `url(${bgImg})` }}
+      >
+        {children}
+      </div>
+      <div className="block md:hidden bg-[#F8F7F5] bg-no-repeat bg-right">
+        {children}
+      </div>
+    </div>
+  );
+};
+
+const HeroSection = () => {
+  return (
+    <Container>
+      <div className="max-w-5xl w-full mx-auto px-4 md:py-20 py-10">
+        <div className="flex md:flex-row md:items-center md:justify-between flex-col gap-10">
+          <div className="max-w-[563px] space-y-10">
+            <IconText color="blue" text="Inclinometer" />
+            <h4 className="md:text-[56px] md:leading-[68px] font-semibold text-3xl text-[#1D1D1F]">
+              Precision in Every Angle
+            </h4>
+            <p className="text-[#6A6A6A] text-lg leading-[28px]">
+              Unlock real-time tilt and angle monitoring with our advanced
+              Inclinometer sensors — engineered for precision, reliability, and
+              seamless integration across both industrial and mobile
+              applications.
+              <br />
+              🞂 Enhance Control  🞂 Improve Safety  🞂 Maximize Efficiency
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <CustomButton background="#0792B4">Request a quote</CustomButton>
+              <CustomButton background="" color="#0792b4">
+                Download brochure
+              </CustomButton>
             </div>
-            <h3 className="text-3xl sm:text-5xl xl:text-[56px] xl:leading-[68px] font-semibold text-[#1D1D1F]">
-              Navigating Precision and Control with Angle Sensor
-            </h3>
-            <h6 className="text-[#6A6A6A] font-medium text-lg leading-[28px]">
-              Unlock precision and control with our advanced Angle Sensors.
-              Explore accurate angle measurement solutions for diverse
-              applications
-            </h6>
-            <CustomButton>Request a quote</CustomButton>
+          </div>
+          <div className="flex justify-center size-full items-center">
+            <img src={cubmini} className="size-full" />
           </div>
         </div>
       </div>
-      <div className="relative w-full flex justify-center h-full z-3 px-4">
-        <img
-          className="absolute right-10 md:-top-30 min-[1024px]:!-top-100 xl:-top-120 2xl:h-auto h-60 sm:h-75 min-[1000px]:h-90 lg:h-100"
-          src="/automotive/onboard-weighing/dumper/dumper.png"
-        />
-      </div>
-    </div>
+    </Container>
   );
 };
 

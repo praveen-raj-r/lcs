@@ -55,7 +55,7 @@ const carouselSlides = [
   },
   {
     image: featureImg2,
-    heading: "Tilt Switch System -  x1",
+    heading: "Inclinometer",
     description: [
       {
         text: "Inclinometer is a staple in most heavy vehicle onboard weighing systems. ",

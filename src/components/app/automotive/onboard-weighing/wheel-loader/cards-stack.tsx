@@ -1,6 +1,6 @@
 import dumperDashboard from "@/assets/onboard-weighing/dumper/dumper-dashboard.png";
 import CustomButton from "@/components/app/custom-button";
-import icon from "@/assets/red-icon.png";
+import IconText from "@/components/app/icon-text";
 
 const CardsStack = () => {
   return (
@@ -9,12 +9,7 @@ const CardsStack = () => {
         <div className="shadow-[0px_13px_32px_5px_#00000026] flex flex-col-reverse md:flex-row p-9">
           <div className="flex justify-between flex-col w-full">
             <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-3">
-                <img src={icon} className="size-6" />
-                <span className="text-[#D90429] font-semibold text-lg">
-                  Automotive IoT
-                </span>
-              </div>
+              <IconText text="Automotive IoT" color="red" />
               <h3 className="text-[#1D1D1F] text-3xl md:text-[38px] font-semibold">
                 Nex-Fleet-One
               </h3>
