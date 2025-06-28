@@ -26,11 +26,9 @@ import Uc100LS from "@/pages/indicators/weighing-controllers/uc100-ls";
 import WeighController from "@/pages/indicators/weighing-controllers/weigh-controllers-home";
 import WeightTransmitter from "@/pages/indicators/weight-transmitters/weight-transmitter-home";
 import WT400VP from "@/pages/indicators/weight-transmitters/wt-400vp";
-import WT50N from "@/pages/indicators/weight-transmitters/wt-50n";
 import WT10N from "@/pages/indicators/weight-transmitters/wt-10n";
 import WeightIndicators from "@/pages/indicators/weight-indicators/weight-indicators-home";
 import WI400VP from "@/pages/indicators/weight-indicators/wi-400vp";
-import WI50N from "@/pages/indicators/weight-indicators/wi-50n";
 import WI10N from "@/pages/indicators/weight-indicators/wi-10n";
 import WeighingHome from "@/pages/industrial-weighing/weighing/weighing";
 import CheckWeigher from "@/pages/industrial-weighing/weighing/checkweigher";
@@ -157,10 +155,6 @@ export const routes = createBrowserRouter([
         element: <WT400VP />,
       },
       {
-        path: "/indicators/weight-transmitters/50N",
-        element: <WT50N />,
-      },
-      {
         path: "/indicators/weight-transmitters/10N",
         element: <WT10N />,
       },
@@ -172,10 +166,6 @@ export const routes = createBrowserRouter([
       {
         path: "/indicators/weight-indicators/400VP",
         element: <WI400VP />,
-      },
-      {
-        path: "/indicators/weight-indicators/50N",
-        element: <WI50N />,
       },
       {
         path: "/indicators/weight-indicators/10N",
