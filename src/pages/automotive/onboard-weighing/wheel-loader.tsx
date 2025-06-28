@@ -11,7 +11,7 @@ import PartnersScroll from "@/components/app/partners-scroll";
 import WheelLoaderProductShow from "@/components/app/automotive/onboard-weighing/wheel-loader/productshow";
 import WheelLoaderWorkFlow from "@/components/app/automotive/onboard-weighing/wheel-loader/wheel-loader-workflow";
 import DownloadDataSheetSection from "@/components/app/download-data-sheet-section";
-import onboardWeighingVideo from "@/assets/videos/onboard-weighing.mp4";
+import onboardWeighingVideo from "@/assets/videos/wheel-loader.mp4";
 import {
   VideoPlayer,
   VideoPlayerContent,
@@ -42,7 +42,7 @@ const WheelLoader = () => {
       </div>
       <WheelLoaderWorkFlow />
       <CardsStack />
-      <div className="max-w-7xl mx-auto px-4 w-full relative py-10">
+      <div className="max-w-5xl mx-auto px-4 w-full relative py-10">
         <VideoPlayer className="overflow-hidden rounded-4xl border w-full">
           <VideoPlayerContent
             slot="media"
@@ -60,7 +60,7 @@ const WheelLoader = () => {
       <FeaturesSection />
       <WheelLoaderProductShow />
       <div className="bg-[linear-gradient(194.37deg,rgba(7,146,180,0.1)_48.7%,#FFFFFF_153.66%)]">
-        <div className="w-full max-w-5xl mx-auto px-4 py-10 md:py-40 mt-10 md:mt-30">
+        <div className="w-full max-w-5xl mx-auto px-4 py-10 md:py-40">
           <img src={WheelLoaderMetrics} className="mx-auto" />
         </div>
         <Specifications />

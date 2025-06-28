@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+import { NavigationMenuLink } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
 import { useState } from "react";
@@ -55,18 +56,19 @@ const Section2 = ({
             <div key={i.title} className="flex flex-col">
               <div className="flex items-center gap-1.25">
                 <img src="/chart-icon.svg" alt="chart icon" />
-
-                <Link to={i.link}>
-                  <h6 className="font-normal text-[16px] leading-[150%] text-[#111B29] flex items-center gap-1 cursor-pointer group hover:text-red-500 transition-colors duration-300 hover:underline hover:font-semibold">
-                    <span>{i.title}</span>
-                    <span>
-                      <ChevronRight
-                        className=" group-hover:translate-x-1 transition-transform duration-300"
-                        size={15}
-                      />
-                    </span>
-                  </h6>
-                </Link>
+                <NavigationMenuLink asChild>
+                  <Link to={i.link}>
+                    <h6 className="font-normal text-[16px] leading-[150%] text-[#111B29] flex items-center gap-1 cursor-pointer group hover:text-red-500 transition-colors duration-300 hover:underline hover:font-semibold">
+                      <span>{i.title}</span>
+                      <span>
+                        <ChevronRight
+                          className=" group-hover:translate-x-1 transition-transform duration-300"
+                          size={15}
+                        />
+                      </span>
+                    </h6>
+                  </Link>
+                </NavigationMenuLink>
               </div>
 
               <div className="relative pb-5">
@@ -93,34 +95,36 @@ export default DropdownNav;
 
 const LinkItem = ({ data }: any) => {
   return (
-    <Link to={data.link}>
-      <li>
-        <button className="text-sm border-none px-5 py-1.5 pr-4 rounded-[4px] cursor-pointer flex items-center gap-2 transition-colors duration-450 focus:outline-offset-4 group bg-[#FFEFCF80] text-nowrap text-[#D41436] hover:bg-[#D41436] hover:text-[#ffffff]">
-          {data.label}
-          <svg
-            className="size-2.5"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              className="transition-transform duration-450 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 translate-x-[-3px]"
-              d="M8 15L14 8.5L8 2"
-              stroke="currentColor"
-              strokeWidth="3"
-            />
-            <line
-              className="transition-opacity duration-450 opacity-0 group-hover:opacity-100"
-              x1="13"
-              y1="8.5"
-              y2="8.5"
-              stroke="currentColor"
-              strokeWidth="3"
-            />
-          </svg>
-        </button>
-      </li>
-    </Link>
+    <NavigationMenuLink asChild>
+      <Link to={data.link}>
+        <li>
+          <button className="text-sm border-none px-5 py-1.5 pr-4 rounded-[4px] cursor-pointer flex items-center gap-2 transition-colors duration-450 focus:outline-offset-4 group bg-[#FFEFCF80] text-nowrap text-[#D41436] hover:bg-[#D41436] hover:text-[#ffffff]">
+            {data.label}
+            <svg
+              className="size-2.5"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                className="transition-transform duration-450 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 translate-x-[-3px]"
+                d="M8 15L14 8.5L8 2"
+                stroke="currentColor"
+                strokeWidth="3"
+              />
+              <line
+                className="transition-opacity duration-450 opacity-0 group-hover:opacity-100"
+                x1="13"
+                y1="8.5"
+                y2="8.5"
+                stroke="currentColor"
+                strokeWidth="3"
+              />
+            </svg>
+          </button>
+        </li>
+      </Link>
+    </NavigationMenuLink>
   );
 };
 

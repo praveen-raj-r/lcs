@@ -64,10 +64,6 @@ const indicators = {
           link: "/indicators/weight-transmitters/400VP",
         },
         {
-          label: "WT-50N",
-          link: "/indicators/weight-transmitters/50N",
-        },
-        {
           label: "WT-10N",
           link: "/indicators/weight-transmitters/10N",
         },
@@ -78,7 +74,6 @@ const indicators = {
       link: "/indicators/weight-indicators",
       items: [
         { label: "WI 400VP", link: "/indicators/weight-indicators/400VP" },
-        { label: "WI-50N", link: "/indicators/weight-indicators/50N" },
         { label: "WI-10N", link: "/indicators/weight-indicators/10N" },
       ],
     },
@@ -158,6 +153,16 @@ const industrialWeighing = {
         },
       ],
     },
+    {
+      title: "Counting System",
+      link: "/industrial-weighing/batching/",
+      items: [
+        {
+          label: "Smart Counting",
+          link: "/industrial-weighing/batching/cummulative-online-weigher",
+        },
+      ],
+    },
   ],
 };
 
@@ -188,8 +193,9 @@ const commercial = {
 };
 
 const customEmbeddedProjects = {
-  heading: "Custom Embedded Projects",
-  description: "Embedded Projects",
+  heading: "Custom  Projects",
+  description:
+    "Tailored embedded system solutions designed to meet unique project requirements.",
   items: [
     {
       title: "Accufit",
@@ -214,21 +220,52 @@ const customEmbeddedProjects = {
   ],
 };
 
-const customIoTProjects = {
-  heading: "Custom IoT Projects",
-  description: "IoT Projects",
+const customIndustrialProjects = {
+  heading: "Industrial Projects",
+  description:
+    "Robust solutions developed for real-world industrial automation and control applications.",
   items: [
     {
-      title: "Project 1",
+      title: "checkWeigher",
       link: "/",
     },
     {
-      title: "Project 2",
+      title: "Static Checkweigher",
+      link: "/",
+    },
+    {
+      title: "Bagging",
+      link: "/",
+    },
+    {
+      title: "Batching",
       link: "/",
     },
   ],
 };
-
+const customIoTProjects = {
+  heading: "Custom IOT Projects",
+  description:
+    "Smart IoT solutions customized for monitoring, control, and data-driven decision-making.",
+  items: [
+    {
+      title: "checkWeigher",
+      link: "/",
+    },
+    {
+      title: "Static Checkweigher",
+      link: "/",
+    },
+    {
+      title: "Bagging",
+      link: "/",
+    },
+    {
+      title: "Batching",
+      link: "/",
+    },
+  ],
+};
 const automotiveIoT = {
   heading: "Automotive IoT",
   description: "IoT-Based Onboard Monitoring, Weighing & Telematics System",
@@ -349,7 +386,7 @@ const products = {
 const applications = {
   heading: "Projects",
   mobileIcon: "terminal",
-  items: [customEmbeddedProjects, customIoTProjects],
+  items: [customEmbeddedProjects, customIndustrialProjects, customIoTProjects],
 };
 const cloud = {
   heading: "Cloud",

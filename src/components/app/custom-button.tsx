@@ -3,6 +3,8 @@
 import { cn } from "@/lib/utils";
 
 const CustomButton = ({
+  background = "#D90429",
+  color = "#FFFFFF",
   className = "",
   children,
   rotate = "",
@@ -10,9 +12,11 @@ const CustomButton = ({
 }: any) => {
   return (
     <button
+      style={{ backgroundColor: background, color: color }}
       onClick={onClick}
       className={cn(
-        "bg-red-600 text-white text-sm border-none px-5 py-1.5 pr-4 rounded-full cursor-pointer flex items-center gap-2 transition-colors duration-150 hover:bg-red-900 focus:outline-offset-4 group",
+        "text-sm border-none px-5 py-1.5 pr-4 rounded-full cursor-pointer flex items-center gap-2 transition-colors duration-150 focus:outline-offset-4 group",
+
         className
       )}
     >

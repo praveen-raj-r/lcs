@@ -21,18 +21,6 @@ const wtFiles = [
     desc: "Digital - Ethernet Weight Transmitter Manual",
   },
   {
-    fileName: "WT-50N-DA",
-    desc: "Digital - Analog Weight Transmitter Manual",
-  },
-  {
-    fileName: "WT-50N-ETH",
-    desc: "Digital - Ethernet Weight Transmitter Manual",
-  },
-  {
-    fileName: "WT-50NDIN-DA",
-    desc: "Digital - Analog Weight Transmitter DIN Rail Mount Manual",
-  },
-  {
     fileName: "WT-10N-DA",
     desc: "Digital - Analog Weight Transmitter Manual",
   },
@@ -62,18 +50,6 @@ const wiFiles = [
   {
     fileName: "WI-400VP-ETH",
     desc: "Digital - Ethernet Weight Indicator Manual",
-  },
-  {
-    fileName: "WI-50N-DA",
-    desc: "Digital - Analog Weight Indicator Manual",
-  },
-  {
-    fileName: "WI-50N-ETH",
-    desc: "Digital - Ethernet Weight Indicator Manual",
-  },
-  {
-    fileName: "WI-50NDIN-DA",
-    desc: "Digital - Analog Weight Indicator DIN Rail Mount Manual",
   },
   {
     fileName: "WI-10N-DA",
@@ -153,7 +129,7 @@ const File = ({ file }: any) => {
         target="_blank"
         href="https://lcscon.myfreshworks.com/crm/sales/web_forms/3e5c17e1b1a4eb8159413c4d05874962c620de98bb622178745602ffbd834d94/form.html"
       >
-        <CustomButton className="text-nowrap">Request Access</CustomButton>
+        <CustomButton>Request Access</CustomButton>
       </a>
     </div>
   );

@@ -62,8 +62,6 @@ const allComponentsTrue = [
   { element: <IconComponent applicableStatus={true} /> },
   { element: <IconComponent applicableStatus={true} /> },
   { element: <IconComponent applicableStatus={true} /> },
-  { element: <IconComponent applicableStatus={true} /> },
-  { element: <IconComponent applicableStatus={true} /> },
 ];
 
 const rows = [
@@ -74,8 +72,6 @@ const rows = [
     items: [
       { element: <BuiltInApplication applicableStatus={false} /> },
       { element: <BuiltInApplication applicableStatus={false} /> },
-      { element: <BuiltInApplication applicableStatus={false} /> },
-      { element: <BuiltInApplication applicableStatus={true} /> },
       { element: <BuiltInApplication applicableStatus={true} /> },
       { element: <BuiltInApplication applicableStatus={true} /> },
     ],
@@ -86,10 +82,8 @@ const rows = [
     description: "",
     items: [
       { element: <ConversionRate rate={400} /> },
-      { element: <ConversionRate rate={50} /> },
       { element: <ConversionRate rate={10} /> },
       { element: <ConversionRate rate={400} /> },
-      { element: <ConversionRate rate={50} /> },
       { element: <ConversionRate rate={10} /> },
     ],
   },
@@ -100,9 +94,7 @@ const rows = [
     items: [
       { element: <IconComponent applicableStatus={false} /> },
       { element: <IconComponent applicableStatus={true} /> },
-      { element: <IconComponent applicableStatus={true} /> },
       { element: <IconComponent applicableStatus={false} /> },
-      { element: <IconComponent applicableStatus={true} /> },
       { element: <IconComponent applicableStatus={true} /> },
     ],
   },
@@ -114,9 +106,7 @@ const rows = [
     items: [
       { element: <IconComponent applicableStatus={true} /> },
       { element: <IconComponent applicableStatus={false} /> },
-      { element: <IconComponent applicableStatus={false} /> },
       { element: <IconComponent applicableStatus={true} /> },
-      { element: <IconComponent applicableStatus={false} /> },
       { element: <IconComponent applicableStatus={false} /> },
     ],
   },
@@ -145,9 +135,7 @@ const rows = [
     items: [
       { element: <NumberComponent range={6} /> },
       { element: <NumberComponent range={5} /> },
-      { element: <NumberComponent range={5} /> },
       { element: <NumberComponent range={6} /> },
-      { element: <NumberComponent range={5} /> },
       { element: <NumberComponent range={5} /> },
     ],
   },
@@ -164,9 +152,7 @@ const rows = [
     items: [
       { element: <IconComponent applicableStatus={false} /> },
       { element: <IconComponent applicableStatus={false} /> },
-      { element: <IconComponent applicableStatus={false} /> },
       { element: <NumberComponent range={3} /> },
-      { element: <NumberComponent range={2} /> },
       { element: <NumberComponent range={2} /> },
     ],
   },
@@ -177,9 +163,7 @@ const rows = [
     items: [
       { element: <IconComponent applicableStatus={false} /> },
       { element: <IconComponent applicableStatus={false} /> },
-      { element: <IconComponent applicableStatus={false} /> },
       { element: <NumberComponent range={3} /> },
-      { element: <NumberComponent range={2} /> },
       { element: <NumberComponent range={2} /> },
     ],
   },
@@ -194,17 +178,15 @@ const ComparisionTable = () => {
             <TableHead className="px-6.5 border-l-0 !text-left" rowSpan={2}>
               Features
             </TableHead>
-            <TableHead colSpan={3}>Weight Transmitter</TableHead>
-            <TableHead className="!border-r-0" colSpan={3}>
+            <TableHead colSpan={2}>Weight Transmitter</TableHead>
+            <TableHead className="!border-r-0" colSpan={2}>
               Weight Indicator
             </TableHead>
           </TableRow>
           <TableRow className="*:font-semibold text-lg leading-[28px] *:py-4 *:border border-dashed *:border-dashed *:text-center">
             <TableHead>WT-400VP</TableHead>
-            <TableHead>WT-50N</TableHead>
             <TableHead>WT-10N</TableHead>
             <TableHead>WI-400VP</TableHead>
-            <TableHead>WI-50N</TableHead>
             <TableHead className="!border-r-0">WI-10N</TableHead>
           </TableRow>
         </TableHeader>

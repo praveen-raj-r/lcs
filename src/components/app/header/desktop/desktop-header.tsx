@@ -33,7 +33,7 @@ const DesktopHeader = () => {
       <div className="max-w-5xl w-full mx-4 flex items-center justify-between gap-10">
         <div className="flex items-center gap-10">
           <Link className="flex justify-center items-center h-[64px]" to="/">
-            <img className="" src={lcsLogo}></img>
+            <img src={lcsLogo}></img>
           </Link>
 
           <Navbar navColor={navColor} />

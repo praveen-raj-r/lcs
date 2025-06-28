@@ -35,8 +35,7 @@ const HeroSection = () => {
                 <div className="flex justify-center">
                   <CustomButton
                     onClick={() => handleDownload()}
-                    rotate="rotate-90"
-                    className="bg-white text-[#D90429] hover:bg-red-500 hover:text-white"
+                    rotate="rotate-90" 
                   >
                     Download
                   </CustomButton>

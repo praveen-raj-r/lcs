@@ -56,10 +56,6 @@ const section1 = [
         link: "/indicators/weight-transmitters/400VP",
       },
       {
-        label: "Weight Transmitter 50N",
-        link: "/indicators/weight-transmitters/50N",
-      },
-      {
         label: "Weight Transmitter 10N",
         link: "/indicators/weight-transmitters/10N",
       },
@@ -70,10 +66,6 @@ const section1 = [
       {
         label: "Weight Indicators 400VP",
         link: "/indicators/weight-indicators/400VP",
-      },
-      {
-        label: "Weight Indicators 50N",
-        link: "/indicators/weight-indicators/50N",
       },
       {
         label: "Weight Indicators 10N",

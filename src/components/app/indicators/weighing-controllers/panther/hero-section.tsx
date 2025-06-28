@@ -1,38 +1,49 @@
-import CustomButton from "@/components/app/custom-button";
-import icon from "@/assets/red-icon.png";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import IconText from "@/components/app/icon-text";
+import dashboards from "@/assets/panther/panther-dashboards.png";
+
+import heroBg from "@/assets/panther/hero-bg.png";
 const HeroSection = () => {
   return (
-    <div>
-      <div className="pt-[64px] flex justify-center relative">
-        <div className="absolute right-10 -bottom-100 md:bottom-0 md:rotate-0 rotate-45">
-          <img src="/onboard-weighing/dumper/grid-lines.png" alt="" />
-        </div>
-        <div className="mt-10 max-w-5xl w-full mx-4 relative">
-          <div className="lg:w-120 xl:w-150 space-y-[40px]">
-            <div className="flex items-center gap-2.75">
-              <div className="flex justify-center items-center">
-                <img className="size-9" src={icon} alt="" />
-              </div>
-              <span className="font-medium text-[36px] leading-[36px] text-[#D90429]">
-                Panther
-              </span>
-            </div>
-            <h3 className="text-3xl sm:text-5xl xl:text-[56px] xl:leading-[68px] font-semibold text-[#1D1D1F]">
-              Navigating Precision and Safety with Tilt Switch solutions
-            </h3>
-            <h6 className="text-[#6A6A6A] font-medium text-lg leading-[28px]">
-              Elevate safety and accuracy with our Dual Axis Tilt Switch.
-              Experience reliable tilt sensing for a wide range of applications
-            </h6>
-            <CustomButton>Request a quote</CustomButton>
+    <Container>
+      <div className="max-w-5xl mx-auto px-4 w-full">
+        <div className="flex flex-col-reverse md:flex-row gap-10">
+          <div className="text-[#1D1D1F] w-full">
+            <IconText color="red" text="Indicators" />
+            <h4 className="md:text-[56px] md:leading-[68px] font-semibold mt-4 text-3xl">
+              Panther <br />
+              WC1000PR
+            </h4>
+            <p className="text-[26px] leading-[32px] mt-5 font-semibold">
+              Fast and powerful, like the Panther
+            </p>
+            <p className="text-lg font-medium leading-[28px] mt-4">
+              The Panther Industrial Weighing Controller delivers high-speed
+              performance and precision for critical industrial applications.
+              Designed for accuracy, real-time control, and seamless
+              integration, it ensures optimal performance even in the most
+              demanding environments.
+            </p>
+          </div>
+          <div className="w-full">
+            <img src={dashboards} alt="" />
           </div>
         </div>
       </div>
-      <div className="relative w-full flex justify-center h-full z-3 px-4">
-        <img
-          className="absolute right-10 md:-top-30 min-[1024px]:!-top-100 xl:-top-120 2xl:h-auto h-60 sm:h-75 min-[1000px]:h-90 lg:h-100"
-          src="/automotive/onboard-weighing/dumper/dumper.png"
-        />
+    </Container>
+  );
+};
+const Container = ({ children }: any) => {
+  return (
+    <div>
+      <div
+        className="md:block hidden bg-[#F8F7F5] py-10 md:py-[75px] bg-no-repeat bg-center"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      >
+        {children}
+      </div>
+      <div className="block md:hidden bg-[#F8F7F5] bg-no-repeat bg-right">
+        {children}
       </div>
     </div>
   );

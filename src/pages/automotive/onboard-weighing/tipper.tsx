@@ -14,7 +14,7 @@ import {
   VideoPlayer,
   VideoPlayerContent,
 } from "@/components/ui/kibo-ui/video-player";
-import onboardWeighingVideo from "@/assets/videos/onboard-weighing.mp4";
+import onboardWeighingVideo from "@/assets/videos/tipper.mp4";
 const Tipper = () => {
   return (
     <div className="mt-[-64px] relative bg-[#F8F7F5] overflow-hidden">
@@ -26,7 +26,7 @@ const Tipper = () => {
 
       <TipperWorkFlow />
       <CardsStack />
-      <div className="max-w-7xl mx-auto px-4 w-full relative py-10">
+      <div className="max-w-5xl mx-auto px-4 w-full relative py-10">
         <VideoPlayer className="overflow-hidden rounded-4xl border w-full">
           <VideoPlayerContent
             slot="media"
