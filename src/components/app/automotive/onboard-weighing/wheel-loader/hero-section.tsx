@@ -1,17 +1,18 @@
 import CustomButton from "@/components/app/custom-button";
-import icon from "@/assets/red-icon.png";
 import wheelLoaderImg from "@/assets/onboard-weighing/wheel-loader/wheel-loader.png";
-import gridLines from "@/assets/onboard-weighing/grid-lines.png";import IconText from "@/components/app/icon-text";
+import gridLines from "@/assets/onboard-weighing/grid-lines.png";
+import IconText from "@/components/app/icon-text";
+
 const HeroSection = () => {
   return (
     <div>
       <div className="pt-[64px] flex justify-center relative">
         <div className="absolute right-10 -bottom-100 md:bottom-0 md:rotate-0 rotate-45">
-          <img src={gridLines} alt="" />
+          <img src={gridLines} />
         </div>
         <div className="mt-10 max-w-5xl w-full mx-4 relative">
           <div className="lg:w-100 xl:w-130 space-y-[40px]">
-          <IconText text="Wheel Loader" color="red" />
+            <IconText text="Wheel Loader" color="red" />
             <h3 className="text-3xl sm:text-5xl xl:text-[56px] xl:leading-[68px] font-semibold text-[#1D1D1F]">
               Improve Loading and Unloading efficiency of your Wheel Loader
             </h3>
@@ -20,7 +21,7 @@ const HeroSection = () => {
               thanks to our advanced Wheel Loader Onboard Weighing system built
               for Safety and Productivity
             </h6>
-           <CustomButton background="#0792B4">Request a quote</CustomButton>
+            <CustomButton background="#0792B4">Request a quote</CustomButton>
           </div>
         </div>
       </div>
