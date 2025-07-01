@@ -1,6 +1,5 @@
 import DownloadDataSheetSection from "@/components/app/download-data-sheet-section";
-import PartnersScroll from "@/components/app/partners-scroll";
-import Video from "@/assets/videos/tilt-switch.mp4";
+import PartnersScroll from "@/components/app/partners-scroll"; 
 import {
   VideoPlayer,
   VideoPlayerContent,
@@ -26,7 +25,7 @@ const SensorHome = () => {
         <VideoPlayer className="overflow-hidden rounded-2xl  border w-full mt-10">
           <VideoPlayerContent
             slot="media"
-            src={Video}
+            src='https://github.com/praveen-raj-r/lcs/releases/download/v1.0.0-assets/tilt-switch.mp4'
             preload="auto"
             muted
             crossOrigin=""

@@ -12,8 +12,7 @@ import {
   VideoPlayer,
   VideoPlayerContent,
   VideoPlayerControlBar,
-} from "@/components/ui/kibo-ui/video-player";
-import Video from "@/assets/videos/tilt-switch.mp4";
+} from "@/components/ui/kibo-ui/video-player"; 
 
 const InclinoMeter = () => {
   return (
@@ -24,7 +23,7 @@ const InclinoMeter = () => {
         <VideoPlayer className="overflow-hidden rounded-2xl  border w-full mt-10">
           <VideoPlayerContent
             slot="media"
-            src={Video}
+            src='https://github.com/praveen-raj-r/lcs/releases/download/v1.0.0-assets/tilt-switch.mp4'
             preload="auto"
             muted
             crossOrigin=""

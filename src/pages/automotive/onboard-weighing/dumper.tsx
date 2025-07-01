@@ -13,8 +13,7 @@ import DownloadDataSheetSection from "@/components/app/download-data-sheet-secti
 import {
   VideoPlayer,
   VideoPlayerContent,
-} from "@/components/ui/kibo-ui/video-player";
-import onboardWeighingVideo from "@/assets/videos/tipper.mp4";
+} from "@/components/ui/kibo-ui/video-player"; 
 
 const Dumper = () => {
   return (
@@ -48,7 +47,7 @@ const Dumper = () => {
         <VideoPlayer className="overflow-hidden rounded-4xl border w-full">
           <VideoPlayerContent
             slot="media"
-            src={onboardWeighingVideo}
+            src='https://github.com/praveen-raj-r/lcs/releases/download/v1.0.0-assets/tipper.mp4'
             preload="auto"
             muted
             crossOrigin=""

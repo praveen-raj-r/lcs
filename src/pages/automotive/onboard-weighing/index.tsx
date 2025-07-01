@@ -9,8 +9,7 @@ import PartnersScroll from "@/components/app/partners-scroll";
 import CustomButton from "@/components/app/custom-button";
 import IconText from "@/components/app/icon-text";
 import heroBg from "@/assets/onboard-weighing/home/hero-bg.png";
-import payloadVehicles from "@/assets/onboard-weighing/home/payload-vehicles.png";
-import onboardWeighingVideo from "@/assets/videos/tipper.mp4";
+import payloadVehicles from "@/assets/onboard-weighing/home/payload-vehicles.png"; 
 import {
   VideoPlayer,
   VideoPlayerContent,
@@ -195,7 +194,7 @@ const VideoSection = () => {
       <VideoPlayer className="overflow-hidden rounded-4xl border w-full">
         <VideoPlayerContent
           slot="media"
-          src={onboardWeighingVideo}
+          src='https://github.com/praveen-raj-r/lcs/releases/download/v1.0.0-assets/tipper.mp4'
           preload="auto"
           muted
           crossOrigin=""
